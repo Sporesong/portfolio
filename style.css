@@ -7,7 +7,7 @@ body {
 }
 
 .background {
-  background-image: url("images/bakgrund-blad-mobil.jpg");
+  background-image: url("images/bakgrund-blad-mobil.svg");
   background-size: cover;
   background-position: center;
   min-height: 300vh;
@@ -226,6 +226,12 @@ ul {
   border: 4px solid lightblue;
   position: relative;
   width: 80%;
+}
+
+@media (min-width: 1000px) {
+  .background {
+    background-image: url("images/bakgrund-blad.svg");
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
