@@ -158,3 +158,32 @@ ul {
     line-height: 0.8rem;
     margin-bottom: 1rem;
 }
+.portfolioRubrik {
+    border: 4px solid yellow;
+    position: relative;
+    text-align: center;
+    left: 0;
+    right: 0;
+    margin: auto;
+    }
+.portfolioPic {
+    border: 4px solid blue;
+    position: static;
+    top: 2rem;
+    left: 0;
+}
+.portfolioBlock {
+    border: 4px solid purple;
+    line-height: 0.8rem;
+    margin-bottom: 1rem;
+}
+.kontaktRubrik {
+    border: 4px solid turquoise;
+    position: relative;
+    text-align: center;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+
