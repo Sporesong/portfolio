@@ -3,8 +3,8 @@
 }
 
 body {
-  max-width: 100%;
   font-family: "Nunito", sans-serif;
+  overflow: auto;
 }
 
 h1, h2 {
@@ -18,20 +18,24 @@ h1, h2 {
   background-size: cover;
   background-position: center;
   min-height: 300vh;
-  width: 100%;
-  border: 4px solid red;
+  max-width: 100%;
+  padding: 2rem;
+  /*border: 4px solid red;*/
 }
 
 .innerContainer { /*lilla bakgrundsblocket*/
-  border: 4px solid black;
+  /*border: 4px solid black;*/
   position: relative;
   min-height: 100vh;
   margin: 2rem 2rem;
   background-color: rgba(255, 255, 255, 0.8);
+  box-shadow: 5px 10px 18px rgb(20, 20, 20);
+  padding: 1rem;
+  border-radius: 10px;
 }
 
 .menu { /*har i ska menyknappen ligga*/
-  border: 4px solid teal;
+  /*border: 4px solid teal;*/
   text-align: right;
   position: relative;
   z-index: 2;
@@ -139,7 +143,7 @@ ul {
   text-transform: uppercase;
 } /*slut pa navigationsblock*/
 .rubrikSida1 { /*h1 rubriken*/
-  border: 4px solid green;
+  /*border: 4px solid green;*/
   text-align: center;
   left: 0;
   right: 0;
@@ -147,20 +151,26 @@ ul {
 }
 
 h3 {
-  border: 4px solid mediumblue;
+  /*border: 4px solid mediumblue;*/
   color: #16591c;
 }
 
+img {
+  filter: grayscale(10%);
+  border: 4px solid #16591c;
+  max-width: 90%;
+  height: auto;
+}
+
 .bioPic, .portfolioPic {
-  border: 4px solid brown;
+  /*border: 4px solid brown;*/
   top: 2.8rem;
   text-align: center;
+  margin-top: 1rem;
 }
 
 .sammanfattning { /*textblock*/
-  border: 4px solid lightgreen;
-  position: relative;
-  top: 2.8rem;
+  /*border: 4px solid lightgreen;*/
   text-align: center;
   left: 0;
   right: 0;
@@ -169,13 +179,13 @@ h3 {
 }
 
 .erfarenhetRubrik, .portfolioRubrik, .sammanfattningRubrik {
-  border: 4px solid grey;
-  position: relative;
+  /*border: 4px solid grey;*/
   text-align: center;
   left: 0;
   right: 0;
   margin: auto;
   margin-bottom: 1rem;
+  margin-top: 2rem;
 }
 
 .sammanfattningRubrik {
@@ -183,26 +193,28 @@ h3 {
 }
 
 .jobbBlock {
-  border: 4px solid pink;
+  /*border: 4px solid pink;*/
   height: 29%;
   line-height: 0.8rem;
   margin-bottom: 1rem;
   padding: 0 2rem;
+  width: 40%;
 }
 
 .skills {
   visibility: hidden;
+  width: 40%;
 }
 
 .portfolioBlock {
-  border: 4px solid purple;
+  /*border: 4px solid purple;*/
   height: 29%;
   line-height: 0.8rem;
   margin-bottom: 1rem;
 }
 
 .kontaktRubrik {
-  border: 4px solid turquoise;
+  /*border: 4px solid turquoise;*/
   position: relative;
   text-align: center;
   left: 0;
@@ -217,7 +229,7 @@ h3 {
   left: 0;
   right: 0;
   margin: auto;
-  border: 4px solid lightblue;
+  /*border: 4px solid lightblue;*/
   width: 80%;
 }
 
@@ -231,6 +243,7 @@ h3 {
   font-size: 2rem;
   border: 3px solid black;
   position: static;
+  pointer-events: all;
 }
 
 .socialMedia:hover {
@@ -238,7 +251,7 @@ h3 {
   box-shadow: 5px 10px 18px rgb(20, 20, 20);
 }
 
-.socialMedia:focused {
+.socialMedia:focus {
   background: #16591c;
   box-shadow: 5px 10px 18px rgb(20, 20, 20);
 }
@@ -254,6 +267,7 @@ h3 {
   }
   .jobbBlockContainer {
     display: flex;
+    flex-wrap: wrap;
     align-content: space-evenly;
     justify-content: center;
     gap: 2rem;
@@ -266,7 +280,7 @@ h3 {
   }
   .skills {
     visibility: visible;
-    border: 4px solid lavenderblush;
+    /*border: 4px solid lavenderblush;*/
   }
 }
 
