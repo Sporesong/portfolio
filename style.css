@@ -4,9 +4,10 @@
 
 body {
   max-width: 100%;
+  font-family: "Nunito", sans-serif;
 }
 
-.background {
+.background { /*stora bakgrundsbilden*/
   background-image: url("images/bakgrund-blad-mobil.webp");
   background-size: cover;
   background-position: center;
@@ -15,7 +16,7 @@ body {
   border: 4px solid red;
 }
 
-.innerContainer {
+.innerContainer { /*lilla bakgrundsblocket*/
   border: 4px solid black;
   position: relative;
   height: 100vh;
@@ -23,7 +24,7 @@ body {
   background-color: rgba(255, 255, 255, 0.8);
 }
 
-.menu {
+.menu { /*har i ska menyknappen ligga*/
   border: 4px solid teal;
   text-align: right;
   position: relative;
@@ -32,7 +33,7 @@ body {
   top: 0rem;
 }
 
-input {
+input { /*checkboxen som ska ligga pa samma plats som button*/
   position: relative;
   top: 0rem;
   right: -2.5rem;
@@ -42,7 +43,7 @@ input {
   opacity: 0;
 }
 
-nav {
+nav { /*navigationsblock*/
   position: fixed;
   background-color: rgba(255, 255, 255, 0.9);
   width: 100vw;
@@ -130,9 +131,8 @@ ul {
   color: black;
   text-shadow: 0px 2px 1px lightgrey;
   text-transform: uppercase;
-}
-
-.rubrikSida1 {
+} /*slut pa navigationsblock*/
+.rubrikSida1 { /*h1 rubriken*/
   border: 4px solid green;
   position: absolute;
   text-align: center;
@@ -148,7 +148,7 @@ ul {
   left: 0;
 }
 
-.sammanfattningRubrik {
+.sammanfattningRubrik { /*underrubriker h2, fixa mixin sen*/
   border: 4px solid orange;
   position: relative;
   text-align: center;
@@ -158,7 +158,7 @@ ul {
   margin: auto;
 }
 
-.sammanfattning {
+.sammanfattning { /*textblock*/
   border: 4px solid lightgreen;
   position: relative;
   top: 2.8rem;
@@ -191,24 +191,19 @@ ul {
   margin-bottom: 1rem;
 }
 
-.portfolioRubrik {
-  border: 4px solid yellow;
-  position: relative;
-  text-align: center;
-  left: 0;
-  right: 0;
-  margin: auto;
+.skills {
+  visibility: hidden;
 }
 
-.portfolioPic {
-  border: 4px solid blue;
-  position: static;
-  top: 2rem;
-  left: 0;
+.portfolioBlockContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .portfolioBlock {
   border: 4px solid purple;
+  height: 29%;
   line-height: 0.8rem;
   margin-bottom: 1rem;
 }
@@ -249,6 +244,18 @@ ul {
   align-content: space-evenly;
   justify-content: center;
   gap: 2rem;
+}
+
+.portfolioBlockContainer {
+  display: flex;
+  align-content: space-evenly;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.skills {
+  visibility: visible;
+  border: 4px solid lavenderblush;
 }
 
 /*# sourceMappingURL=style.css.map */
