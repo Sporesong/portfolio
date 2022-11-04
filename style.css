@@ -178,12 +178,6 @@ ul {
   margin-bottom: 1rem;
 }
 
-.jobbBlockContainer {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
 .jobbBlock {
   border: 4px solid pink;
   height: 29%;
@@ -193,12 +187,6 @@ ul {
 
 .skills {
   visibility: hidden;
-}
-
-.portfolioBlockContainer {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
 }
 
 .portfolioBlock {
@@ -238,24 +226,22 @@ ul {
     -webkit-backdrop-filter: blur(5px);
     backdrop-filter: blur(5px);
   }
-}
-.jobbBlockContainer {
-  display: flex;
-  align-content: space-evenly;
-  justify-content: center;
-  gap: 2rem;
-}
-
-.portfolioBlockContainer {
-  display: flex;
-  align-content: space-evenly;
-  justify-content: center;
-  gap: 2rem;
-}
-
-.skills {
-  visibility: visible;
-  border: 4px solid lavenderblush;
+  .jobbBlockContainer {
+    display: flex;
+    align-content: space-evenly;
+    justify-content: center;
+    gap: 2rem;
+  }
+  .portfolioBlockContainer {
+    display: flex;
+    align-content: space-evenly;
+    justify-content: center;
+    gap: 2rem;
+  }
+  .skills {
+    visibility: visible;
+    border: 4px solid lavenderblush;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
