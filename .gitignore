@@ -1,0 +1,10 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs/slnx.sqlite
+/.vs/inl-3-cv-med-css-Sporesong/FileContentIndex/4680b741-f20d-4041-a351-a728c9491b57.vsidx
+/.vs/slnx.sqlite
+*.vsidx
+node_modules
+
