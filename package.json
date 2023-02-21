@@ -1,0 +1,22 @@
+{
+  "name": "y",
+  "version": "1.0.0",
+  "description": "cv-site-sporesong",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Medieinstitutet/inl-3-cv-med-css-Sporesong.git"
+  },
+  "author": "suvi sivula",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Medieinstitutet/inl-3-cv-med-css-Sporesong/issues"
+  },
+  "homepage": "https://github.com/Medieinstitutet/inl-3-cv-med-css-Sporesong#readme",
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.8.3"
+  }
+}
