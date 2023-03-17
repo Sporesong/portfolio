@@ -19,7 +19,24 @@ h1, h2 {
     background-size: auto;
     min-height: 100vh;
     max-width: 100%;
-    border: 2px solid rebeccapurple;
+}
+
+.backgroundWhite {
+  min-height: 100vh;
+  max-width: 100%;
+}
+
+.backgroundWhiteShort {
+  max-width: 100%;
+}
+
+.background2 {
+  background-image: url("../images/bakgrund-blad-mobil.webp");
+  background-repeat: no-repeat;
+  background-size: auto;
+  min-height: 100vh;
+  max-width: 100%;
+  margin-top: 5%;
 }
 
 .innerContainer1 { 
@@ -30,7 +47,6 @@ h1, h2 {
     box-shadow: 5px 10px 18px rgb(20, 20, 20);
     padding: 1rem;
     border-radius: 10px;
-    outline: 2px solid red;
     top: 11%;
 }
 
@@ -42,7 +58,6 @@ h1, h2 {
     box-shadow: 5px 10px 18px rgb(20, 20, 20);
     padding: 1rem;
     border-radius: 10px;
-    outline: 2px solid royalblue;
     top: 102%;
 }
 
@@ -60,20 +75,40 @@ h1, h2 {
 
 .innerContainer3 { 
   position: absolute;
-  min-height: 75vh;
+  margin: 1rem;
+  background-color: rgba(255, 255, 255, 0.8);
+  box-shadow: 5px 10px 18px rgb(20, 20, 20);
+  padding: 1rem 1rem 0 1rem;
+  border-radius: 10px;
+  top: 206%;
+}
+
+.innerContainer4 { 
+  position: absolute;
   margin: 1rem;
   background-color: rgba(255, 255, 255, 0.8);
   box-shadow: 5px 10px 18px rgb(20, 20, 20);
   padding: 1rem;
   border-radius: 10px;
-  outline: 2px solid tomato;
-  top: 210%;
+  top: 306%;
 }
+
+.innerContainer4::before {    
+  content: "";
+  background-image: url("../images/bakgrund-blad-mobil.webp");
+  background-size: cover;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  opacity: 0.2;
+}
+
 
 .navbar {
     position: fixed;
     background-color: rgba(0,149,62,0.8);
-    outline: 2px solid rosybrown;
     height: 10%;
     width: 100%;
     z-index: 3;
@@ -83,7 +118,7 @@ h1, h2 {
     position: absolute;
     left: 25%;
     top: 50%;
-    width: 32px;
+    width: 25px;
     height: 3px;
     background-color: black;
     transition: all 400ms cubic-bezier(.84,.06,.52,1.8);
@@ -101,8 +136,8 @@ h1, h2 {
 
 .hamburger-icon {
   position: fixed;
-  height: 60px;
-  width: 60px;
+  height: 50px;
+  width: 50px;
   top: 1%;
   left: 3%;
   z-index: 1000;
@@ -110,7 +145,6 @@ h1, h2 {
   border-radius: 50%;
   transition: all 0.2s ease-in-out;
   background: rgba(255,255,255,0.2);
-  outline: 2px solid teal;
   &:hover {
     transform: scale(1.2);
     box-shadow: 0px 0px 30px rgba(0,0,0,0.1);
@@ -167,6 +201,15 @@ nav {
       line-height: 2.2;
       text-transform: uppercase;
       letter-spacing: 1.7px;
+      &:active {
+      color: #16591c;
+      }
+      &:focus {
+      color: #16591c;
+      }
+      &:visited {
+      color: black;
+      }
     }
   }
 }
@@ -199,6 +242,7 @@ nav {
 h3 {
     color: #16591c;
 }
+
 img {
     filter: grayscale(15%);
     outline: 4px solid #16591c;
@@ -206,6 +250,7 @@ img {
     max-width: 90%;
     height: auto;
 }
+
 .bioPic, .portfolioPic {
     top: 2.8rem;
     text-align: center;
@@ -218,16 +263,20 @@ img {
     margin: auto;
     padding: 0 2rem;
 }
-.studierRubrik, .portfolioRubrik, .sammanfattningRubrik {
+.studierRubrik, .portfolioRubrik, #sammanfattningRubrik {
     text-align: center;
     left: 0;
     right: 0;
     margin: auto;
     margin-bottom: 1rem;
-    margin-top: 2rem;
+    margin-top: 1.5rem;
 }
 .studierRubrik {
   position: relative;
+}
+
+.portfolioRubrik {
+  margin-top: 2%;
 }
 .sammanfattningRubrik {
   margin-top: 1rem;
@@ -249,14 +298,20 @@ li {
     margin-bottom: 2rem;
     padding: 0 2rem;
 }
+
+.portfolioBlock2 {
+  padding: 0;
+}
 .kontaktRubrik {
-    position: relative;
+  position: relative;
     text-align: center;
     left: 0;
     right: 0;
-    margin: 1rem auto;    
+    margin: 1rem auto;  
+    top: 9rem;  
 }
 .contactIconsContainer {
+  position: relative;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -264,6 +319,7 @@ li {
     right: 0;
     margin: auto;
     width: 80%;
+    top: 8rem;
 }
 .socialMedia { /*cirklarna daer kontaktbuttons ligger*/
     margin: 1rem 0px;
@@ -286,15 +342,80 @@ li {
     box-shadow: 5px 10px 18px rgb(20, 20, 20);
 }
 @media (min-width: 1000px) { /*rules for big screens*/
-    .background {
-        background-image: url("../images/bakgrund-blad.svg");
-        background-size: auto;
-    }
-    .innerContainer {
-        -webkit-backdrop-filter: blur(5px);
-        backdrop-filter: blur(5px);
-        margin: 1rem, 2rem;
-    }
+
+  .navbar {
+    height: 8%;
+  }
+  .hamburger-icon {
+    width: 60px;
+    height: 60px;
+  }
+
+  nav.show {
+    width: 30%;
+  }
+
+  .icon-1, .icon-2, .icon-3 {
+width: 30px;
+  }
+
+  .background, .background2 {
+      background-image: url("../images/bakgrund-blad.svg");
+      background-size: auto;
+  }
+
+  .bioPic {
+    height: 300px;
+    width: auto;
+  }
+
+  .innerContainer1 {
+      -webkit-backdrop-filter: blur(5px);
+      backdrop-filter: blur(5px);
+      min-height: 62vh;
+      margin: 1rem 9rem;  
+  }
+
+  .sammanfattning, p, h5, ul, h3 {
+    max-width: 80%;
+    font-size: 1.5rem;
+    text-align: center;
+    margin-left: 10%;
+  }
+
+  h5, h3 {
+    text-align: center;
+    margin-left: 10%;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  .backgroundWhite {
+    min-height: 80vh;
+  }
+
+  .innerContainer2 {
+    top: 85%;
+    margin: 1rem 9rem;
+    min-height: 62vh;
+  }
+  .innerContainer3 {
+    top: 185%;
+    margin: 1rem 9rem;
+    min-height: 62vh;
+  }
+  .innerContainer4 {
+    top: 265%;
+    margin: 1rem 9rem;
+    min-height: 62vh;
+  }
+
+  .background2 {
+    margin-top: 20px;
+    min-height: 110vh;
+  }
     .skolBlockContainer {
       position: relative;
         display: flex;
@@ -305,23 +426,23 @@ li {
     }
     .skolBlock {
         position: relative;
-        max-width: 40%;
-        border: 2px solid #16591c;
+        max-width: 80%;
         border-radius: 4px;
     }
-
     .portfolioBlockContainer {
         display: flex;
         align-content: space-evenly;
         justify-content: center;
         gap: 2rem;
     }
-    .portfolioPic
-    {
-        margin-left: -3.5rem;
-    }
     .skills {
         visibility: visible;
+    }
+    .kontaktRubrik {
+      top: -6rem;
+    }
+    .contactIconsContainer {
+      top:-4rem;
     }
 }/*jag kaenner mig inte tillraeckligt insatt foer att anvaenda sass aennu, men haaller paa att laesa in mig mer i det, 
      kaenner mig noejd med att ha faatt det att fungera. Vill saetta in javascript senare foer att ladda upp respektive komponent naer man trycker paa dem i menyn.
