@@ -11,6 +11,6 @@ icon.addEventListener('click', function() {
   nav.classList.toggle('show');
 });
 
-let encEmail = "c3V2aS5wcmljZWxsYUBnbWFpbC5jb20=";
-const form = document.querySelector(".fa-envelope");
-form.setAttribute("href", "mailto:".concat(atob(encEmail)));
+let encodedEmail = "c3V2aS5wcmljZWxsYUBnbWFpbC5jb20=";
+const emailLink = document.getElementById("contact");
+emailLink.setAttribute("href", "mailto:".concat(atob(encodedEmail)));

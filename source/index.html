@@ -29,19 +29,19 @@
         <nav id="nav"> 
             <ul>
             <li><a href="#sammanfattningRubrik">Om mig</a></li>
-            <li><a>Studier</a></li>
-            <li><a>Portfolio</a></li>
-            <li><a>Kontakt</a></li>
+            <li><a href="#studierRubrik">Studier</a></li>
+            <li><a href="#portfolioRubrik">Portfolio</a></li>
+            <li><a href="#kontaktRubrik">Kontakt</a></li>
             </ul>
         </nav>
-        <div class="dark-blue" id="blue"></div>
+        <div class="dark-blue" id="blue"></div>x
         </div>
     <section class="Page1">
         <div class="background">
             <div class="innerContainer1">
                 <h1 class="rubrikSida1">Suvi Sivula</h1>
                 <div class="bioPic">
-                    <img src="../images/cvphoto.jpg" class="bioPic" alt="kvinna med långt ljusbrunt hår och marinblåjacka vid kanalerna i Amsterdam på kvällen" width="220">
+                    <img src="../images/cvphoto.png  " class="bioPic" alt="kvinna med långt ljusbrunt hår och marinblåjacka vid kanalerna i Amsterdam på kvällen" width="220">
                 </div>
                 <h2 id="sammanfattningRubrik">Kort om mig</h2>
                 <p class="sammanfattning">Problem är till för att lösas, glaset är alltid halvfullt och ensam är inte alltid stark. Dessa klyschor sammanfattar ganska bra både vad jag kan bidra med i arbetslivet och vilken sorts arbetsplats jag trivs på. Jag gillar biten där man skapar en användarupplevelse allra mest, där man med hjälp av text, färg, form och kod gör något som är både grafiskt tilltalande och användarvänligt.</p>
@@ -49,7 +49,7 @@
         </div>
         <div class="backgroundWhite"></div>
             <div class="innerContainer2">
-                <h2 class="studierRubrik">Utbildning</h2>
+                <h2 class="studierRubrik" id="studierRubrik">Utbildning</h2>
                 <div class="skolBlockContainer">
                     <section class="skolBlock">
                         <h3 class=>Front-end developer</h3>
@@ -77,7 +77,7 @@
         </div>    
             <div class="background2">
                 <div class="innerContainer3">
-                    <h2 class="portfolioRubrik">Portfolio</h2>
+                    <h2 class="portfolioRubrik" id="portfolioRubrik">Portfolio</h2>
                         <section class="portfolioBlock">
                             <a>
                                 <div class="portfolioPic">
@@ -121,15 +121,17 @@
                 </div> 
             </div> 
             <div class="backgroundWhiteShort">   
-                <h2 class="kontaktRubrik">Kontakt</h2>
+                <h2 class="kontaktRubrik" id="kontaktRubrik">Kontakt</h2>
                 <div class="contactIconsContainer">
-                    <button aria-label="github link button" a href="https://github.com/Sporesong" class="fa fa-github fa-2x socialMedia"></button>
-                    <button aria-label="linkedin link button" a href="https://www.linkedin.com/in/suvi-sivula-56a18b121/" class="fa fa-linkedin fa-2x socialMedia"></button>
-                    <button aria-label="email me  button" a href="#" class="fa fa-envelope fa-2x socialMedia"></button>
-                </div>
+                    <a href="https://github.com/Sporesong" aria-label="github link button" class="fa fa-github fa-2x socialMedia"></a>
+                    <a href="https://www.linkedin.com/in/suvi-sivula-56a18b121/" aria-label="linkedin link button" class="fa fa-linkedin fa-2x socialMedia"></a>
+                    <a href="mailto:youremail@example.com" aria-label="email me button" class="fa fa-envelope fa-2x socialMedia" id="contact"></a>
+                  </div>                  
             </div>     
     </section>
 <script src="main.js"></script>
 </body>
 
 </html>
+
+<!-- todo: sätt max-width på innercontainerelementen. -->
