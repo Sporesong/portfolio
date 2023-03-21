@@ -27,7 +27,7 @@ h1, h2 {
 }
 
 .backgroundWhite {
-  min-height: 100vh;
+  min-height: 85vh;
   max-width: 100%;
 }
 
@@ -41,7 +41,7 @@ h1, h2 {
   background-size: auto;
   min-height: 100vh;
   max-width: 100%;
-  margin-top: 5%;
+  margin-top: 1%;
 }
 
 .innerContainer1 { 
@@ -85,7 +85,7 @@ h1, h2 {
   box-shadow: $box-shadow;
   padding: 1rem 1rem 0 1rem;
   border-radius: $border-radius;
-  top: 206%;
+  top: 195%;
 }
 
 .innerContainer4 { 
@@ -96,7 +96,7 @@ h1, h2 {
   box-shadow: $box-shadow;
   padding: 1rem;
   border-radius: $border-radius;
-  top: 306%;
+  top: 295%;
 }
 
 .innerContainer4::before {    
@@ -320,7 +320,7 @@ li {
     left: 0;
     right: 0;
     margin: 1rem auto;  
-    top: 9rem;  
+    top: 12rem;  
 }
 .contactIconsContainer {
   position: relative;
@@ -331,7 +331,7 @@ li {
     right: 0;
     margin: auto;
     width: 80%;
-    top: 8rem;
+    top: 13rem;
 }
 .socialMedia { 
   display: flex;

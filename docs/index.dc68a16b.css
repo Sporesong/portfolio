@@ -22,7 +22,7 @@ h1, h2 {
 }
 
 .backgroundWhite {
-  min-height: 100vh;
+  min-height: 85vh;
   max-width: 100%;
 }
 
@@ -36,7 +36,7 @@ h1, h2 {
   background-image: url("bakgrund-blad-mobil.cdda646d.webp");
   background-repeat: no-repeat;
   background-size: auto;
-  margin-top: 5%;
+  margin-top: 1%;
 }
 
 .innerContainer1 {
@@ -76,7 +76,7 @@ h1, h2 {
   margin: 1rem;
   padding: 1rem 1rem 0;
   position: absolute;
-  top: 206%;
+  top: 195%;
   box-shadow: 5px 10px 18px #141414;
 }
 
@@ -87,7 +87,7 @@ h1, h2 {
   margin: 1rem;
   padding: 1rem;
   position: absolute;
-  top: 306%;
+  top: 295%;
   box-shadow: 5px 10px 18px #141414;
 }
 
@@ -318,7 +318,7 @@ li {
   text-align: center;
   margin: 1rem auto;
   position: relative;
-  top: 9rem;
+  top: 12rem;
   left: 0;
   right: 0;
 }
@@ -330,7 +330,7 @@ li {
   margin: auto;
   display: flex;
   position: relative;
-  top: 8rem;
+  top: 13rem;
   left: 0;
   right: 0;
 }
