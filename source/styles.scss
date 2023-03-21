@@ -360,7 +360,7 @@ li {
 margin-left: 2px;
 }
 
-.socialMedia:first-child(1) {
+.socialMedia:first-child {
   margin-left: 2px;
   }
 
@@ -373,7 +373,6 @@ margin-left: 2px;
     box-shadow: 5px 10px 18px rgb(20, 20, 20);
 }
 @media (min-width: 1000px) { 
-  @media (min-width: 1000px) {
     /* Styles for screens with a minimum width of 1000px */
     .navbar {
     height: 8%;
@@ -493,7 +492,6 @@ margin-left: 2px;
       top: 15rem;
     }
   }
-}    
   /*
 
   .navbar {
