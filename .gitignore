@@ -37,3 +37,4 @@ dist
 dist-ssr
 *.css.map
 *.local
+.cache
