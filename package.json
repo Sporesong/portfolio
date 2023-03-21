@@ -9,11 +9,12 @@
     "predeploy": "rm -rf dist && parcel build ./*.html --public-url https://github.com/Sporesong/portfolio",
     "deploy": "gh-pages -d dist"
   },
-
   "author": "suvi sivula",
   "license": "MIT",
   "devDependencies": {
     "@parcel/transformer-sass": "^2.8.3"
+  },
+  "dependencies": {
+    "gh-pages": "^5.0.0"
   }
 }
-
