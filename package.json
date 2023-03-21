@@ -1,20 +1,6 @@
 {
-  "name": "y",
-  "version": "1.0.0",
-  "description": "cv-site-sporesong",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "parcel ./*.html",
-    "predeploy": "rm -rf dist && parcel build source/index.html --public-url https://github.com/Sporesong/portfolio",
-    "deploy": "gh-pages -d dist"
-  },
-  "author": "suvi sivula",
-  "license": "MIT",
   "devDependencies": {
-    "@parcel/transformer-sass": "^2.8.3"
-  },
-  "dependencies": {
-    "gh-pages": "^5.0.0"
+    "@parcel/transformer-sass": "^2.8.3",
+    "eslint": "^8.36.0"
   }
 }
