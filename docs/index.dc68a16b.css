@@ -522,7 +522,7 @@ li {
 
 @media (min-width: 1000px) {
   .navbar {
-    height: 8%;
+    height: 11%;
   }
 
   .hamburger-icon {
@@ -542,95 +542,114 @@ li {
     background-image: url("bakgrund-blad.9cb0c2f4.svg");
     background-position: center;
     background-size: auto;
+    justify-content: center;
+    align-items: center;
+    display: flex;
   }
 
   .bioPic {
-    height: 300px;
+    height: 250px;
     width: auto;
+    margin-top: 0%;
   }
 
   .innerContainer1, .innerContainer3 {
     -webkit-backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
     backdrop-filter: blur(5px);
-    min-height: 70vh;
-    max-width: 70%;
-    margin: 1rem 9rem 1rem 20rem;
-  }
-
-  .innerContainer1 {
-    margin-top: 5rem;
+    max-height: 65vh;
+    max-width: 80%;
+    text-align: center;
   }
 
   .sammanfattning, p, h5, ul, h3 {
-    max-width: 80%;
-    text-align: center;
-    margin-left: 10%;
-    font-size: 1.5rem;
+    max-width: 90%;
   }
 
-  h5, h3 {
-    text-align: center;
-    margin-left: 10%;
+  h5, h3, p {
+    margin-top: 1%;
+    margin-bottom: 1%;
   }
 
   h2 {
     font-size: 2rem;
   }
 
+  p {
+    font-size: 1.2rem;
+  }
+
   .backgroundWhite {
     min-height: 80vh;
+    justify-content: center;
+    align-items: center;
+    display: flex;
   }
 
   .innerContainer2 {
     min-height: 70vh;
-    max-width: 70%;
-    margin: 20rem 9rem 1rem 20rem;
-    top: 82%;
+    max-width: 80%;
+    text-align: center;
+    top: 108%;
   }
 
   .innerContainer3 {
-    min-height: 75vh;
-    max-width: 70%;
-    margin: 2rem 9rem 1rem 20rem;
-    top: 218%;
+    min-height: 85vh;
+    top: 209%;
   }
 
   .innerContainer4 {
     min-height: 70vh;
-    max-width: 70%;
-    margin: 2rem 9rem 1rem 20rem;
-    top: 325%;
+    max-width: 80%;
+    text-align: center;
+    top: 310%;
   }
 
   .background2 {
-    min-height: 110vh;
-    margin-top: 15rem;
-  }
-
-  .skolBlockContainer {
-    flex-wrap: wrap;
-    place-content: center space-evenly;
-    gap: 2rem;
-    display: flex;
-    position: relative;
+    min-height: 100vh;
+    margin-top: 11%;
   }
 
   .skolBlock {
     max-width: 80%;
+    text-align: center;
     border-radius: 4px;
   }
 
-  .portfolioBlockContainer {
-    place-content: center space-evenly;
-    gap: 3rem;
-    display: flex;
+  .skolBlock h3, .skolBlock h5, .portfolioBlock h3 {
+    margin-left: 5%;
   }
 
-  .kontaktRubrik, .contactIconsContainer {
-    position: relative;
-    top: 15rem;
+  li {
+    font-size: 1.2rem;
   }
+
+  .portfolioBlock p {
+    max-width: 100%;
+    font-size: 1.2rem;
+  }
+
+  .kontaktRubrik {
+    position: absolute;
+    top: 428%;
+  }
+
+  .contactIconsContainer {
+    position: absolute;
+    top: 440%;
+  }
+}
+
+.rubrikSida1 {
+  margin-top: 0%;
+}
+
+#sammanfattningRubrik {
+  margin-top: 1%;
+}
+
+#portfolioRubrik {
+  margin-top: 0%;
 }
 
 /*# sourceMappingURL=index.dc68a16b.css.map */
