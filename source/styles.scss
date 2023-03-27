@@ -191,7 +191,7 @@ nav {
   left: 0;
   height: 100%;
   width: 0%;
-  z-index: 2;
+  z-index: 999;
   opacity: 0;
   transition: all 600ms cubic-bezier(.62,.04,.3,1.56);
   transition-delay: 100ms;
@@ -510,117 +510,5 @@ margin-left: 2px;
   }
   /*
 
-  .navbar {
-    height: 8%;
-  }
-  .hamburger-icon {
-    width: 60px;
-    height: 60px;
-  }
-
-  nav.show {
-    width: 30%;
-  }
-
-  .icon-1, .icon-2, .icon-3 {
-width: 30px;
-  }
-
-  .background, .background2 {
-      background-image: url("../images/bakgrund-blad.svg");
-      background-size: auto;
-      background-position: center;
-  }
-
-  .bioPic {
-    height: 300px;
-    width: auto;
-  }
-
-  .innerContainer1, .innerContainer3 {
-      -webkit-backdrop-filter: blur(5px);
-      backdrop-filter: blur(5px);
-      min-height: 70vh;
-      margin: 1rem 9rem 1rem 20rem;  
-      max-width: 70%;
-  }
-
-  .innerContainer1 {
-    margin-top: 5rem;
-  }
-
-  .sammanfattning, p, h5, ul, h3 {
-    max-width: 80%;
-    font-size: 1.5rem;
-    text-align: center;
-    margin-left: 10%;
-  }
-
-  h5, h3 {
-    text-align: center;
-    margin-left: 10%;
-  }
-
-  h2 {
-    font-size: 2rem;
-  }
-
-  .backgroundWhite {
-    min-height: 80vh;
-  }
-
-  .innerContainer2 {
-    top: 82%;
-    min-height: 70vh;
-    margin: 20rem 9rem 1rem 20rem;  
-    max-width: 70%;
-  }
-  .innerContainer3 {
-    top: 218%;
-    min-height: 75vh;
-    margin: 2rem 9rem 1rem 20rem;  
-    max-width: 70%;
-  }
-  .innerContainer4 {
-    top: 325%;
-    min-height: 70vh;
-    margin: 2rem 9rem 1rem 20rem;  
-    max-width: 70%;
-  }
-
-  .background2 {
-    margin-top: 15rem;
-    min-height: 110vh;
-  }
-    .skolBlockContainer {
-      position: relative;
-        display: flex;
-        flex-wrap: wrap;
-        align-content: space-evenly;
-        justify-content: center;
-        gap: 2rem;
-    }
-    .skolBlock {
-        position: relative;
-        max-width: 80%;
-        border-radius: 4px;
-    }
-    .portfolioBlockContainer {
-        display: flex;
-        align-content: space-evenly;
-        justify-content: center;
-        gap: 3rem;
-    }
-    .skills {
-        visibility: visible;
-    }
-    .kontaktRubrik {
-      top: 15rem;
-    }
-    .contactIconsContainer {
-      top: 18rem;
-    }
-}
-}*/
-
+  
 
